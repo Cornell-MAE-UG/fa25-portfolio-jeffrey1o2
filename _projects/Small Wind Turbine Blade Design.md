@@ -17,13 +17,15 @@ The design effort began by establishing aerodynamic operating targets based on p
 
 We defined blade geometry at the root and tip, with linear interpolation used to generate intermediate values along the span. Our chord varied from 7 cm at the root to 3 cm at the tip, and the twist angle ranged from 20º at the root to 0º at the tip.
 
+![Blade CAD]({{ "assets/images/Blade CAD Model.png" | relative_url }}){: class="profile-image"}
+
 Our group developed a MATLAB-based blade element and structural stress model to estimate our blade's performance given the selected geometry. The model predicted torque and power output, and was used to make variation in the root and tip fixed values.
 
 Testing & Results
 
 We tested our blade in the closed-loop wind tunnel across five fan operating frequences: 8 Hz, 10 Hz, 12 Hz, 14 Hz, and 16 Hz. For each condition, we allowed the turbine to spin freely to establish a baseline free rotation condition. Afterwards, we slowly increased the torque brake voltage until stall, recording RPM, torque, and electrical power output to evaluate the blade's performance. The blade operated safely under all test conditions and satisfied all structural and operational constraints. While peak power and operating rpm were lower than the model predictions (indicating early stall and reduced aerodynamic efficiency), the testing produced data that clearly revealed performance trends and model limitations.
 
-image: /assets/images/Power Curves.png
+![Power Curves]({{ "assets/images/Power Curves.png" | relative_url }}){: class="profile-image"}
 
 My Contribution
 
