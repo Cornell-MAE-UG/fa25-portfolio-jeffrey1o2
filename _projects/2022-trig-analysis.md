@@ -1,25 +1,26 @@
 ---
 layout: project
-title: Analysis of Functions
-description: Class project with Graphs
-technologies: [MATLAB, python]
+title: Small Wind Turbine Blade Design
+description: MAE 4272 – Blade Design
+technologies: [MATLAB, Autodesk Fusion 360, Wind Tunnel]
 image: /assets/images/function-graph.png
 ---
 
 
-As part of a class project...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec accumsan leo. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Aenean faucibus luctus est, sed bibendum tellus. Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
+As part of MAE 4272: Fluids and Heat Transfer Laboratory at Cornell University, our team designed, fabricated, and experimentally tested a small-scale wind turbine blade. The objective was to maximize power output under fixed wind-tunel operating conditions while ensuring structural safety under overspeed (free-spin) scenarios. This project mirrors real-world engineering challenges where aerodynamic performance must be balanced against material limits and system constraints. 
 
+The blade design was governed by strict constraints: max blade length of 6 inches, 1 inch hub radius, max rotation rate of 2000 rpm, 80 MPa material strength limit, and limitations imposed by the torque brake assembly. These constraints required careful iteration to acieve reliable and safe performance.
 
-Aenean faucibus luctus est, sed bibendum tellus. Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
+Design Process
 
+The design effort began by establishing aerodynamic operating targets based on prior laboratory work and airfoil performance data. We selected a NACA 4412 airfoil, and used its data to establish a target AoA of 6º to operate near a favorable lift-to-drag region. These targets guided the selection of blade twist and chord distributions along the span.
 
-This is how I solved the problem:
+We defined blade geometry at the root and tip, with linear interpolation used to generate intermediate values along the span. Our chord varied from 7 cm at the root to 3 cm at the tip, and the twist angle ranged from 20º at the root to 0º at the tip.
 
-```python
-    some code = 10;
-    plot();
-```
+Our group developed a MATLAB-based blade element and structural stress model to estimate our blade's performance given the selected geometry. The model predicted torque and power output, and was used to make variation in the root and tip fixed values.
 
-Aenean tincidunt aliquam arcu, in euismod dui dapibus eu. In placerat, mi et ultrices consequat, quam ligula cursus mauris, in semper neque nibh at est. Maecenas hendrerit dignissim porta. Phasellus nec fringilla dolor. Etiam efficitur nisi sit amet velit pharetra feugiat. Etiam ultrices turpis at leo semper, eleifend scelerisque neque malesuada. Aliquam molestie congue rhoncus. Donec blandit neque dolor, nec tristique mi pretium ac. Mauris tincidunt ullamcorper magna, nec pellentesque mi sagittis quis.
+Testing
+
+We tested our blade in the closed-loop wind tunnel across five fan operating frequences: 8 Hz, 10 Hz, 12 Hz, 14 Hz, and 16 Hz. For each condition, we allowed the turbine to spin freely to establish a baseline free rotation condition. Afterwards, we slowly increased the torque brake voltage until stall, recording RPM, torque, and electrical power output to evaluate the blade's performance.
 
 
