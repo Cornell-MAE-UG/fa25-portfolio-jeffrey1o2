@@ -3,7 +3,7 @@ layout: project
 title: Small Wind Turbine Blade Design
 description: MAE 4272 – Blade Design
 technologies: [MATLAB, Autodesk Fusion 360, Wind Tunnel]
-image: /assets/images/function-graph.png
+image: /assets/images/Blade CAD Model.png
 ---
 
 
@@ -19,8 +19,10 @@ We defined blade geometry at the root and tip, with linear interpolation used to
 
 Our group developed a MATLAB-based blade element and structural stress model to estimate our blade's performance given the selected geometry. The model predicted torque and power output, and was used to make variation in the root and tip fixed values.
 
-Testing
+Testing & Results
 
-We tested our blade in the closed-loop wind tunnel across five fan operating frequences: 8 Hz, 10 Hz, 12 Hz, 14 Hz, and 16 Hz. For each condition, we allowed the turbine to spin freely to establish a baseline free rotation condition. Afterwards, we slowly increased the torque brake voltage until stall, recording RPM, torque, and electrical power output to evaluate the blade's performance.
+We tested our blade in the closed-loop wind tunnel across five fan operating frequences: 8 Hz, 10 Hz, 12 Hz, 14 Hz, and 16 Hz. For each condition, we allowed the turbine to spin freely to establish a baseline free rotation condition. Afterwards, we slowly increased the torque brake voltage until stall, recording RPM, torque, and electrical power output to evaluate the blade's performance. The blade operated safely under all test conditions and satisfied all structural and operational constraints. While peak power and operating rpm were lower than the model predictions (indicating early stall and reduced aerodynamic efficiency), the testing produced data that clearly revealed performance trends and model limitations.
 
+My Contribution
 
+I contributed primarily to the aerodynamic modeling and data analysis for this project. I helped develop and validate the MATLAB performance model, helped process experimental data to generate poewr curves, and compared predicted vs measured performance. Following our model testing, I helped identify design improvements with the team for future iterations.
