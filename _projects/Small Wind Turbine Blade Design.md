@@ -23,7 +23,7 @@ Testing & Results
 
 We tested our blade in the closed-loop wind tunnel across five fan operating frequences: 8 Hz, 10 Hz, 12 Hz, 14 Hz, and 16 Hz. For each condition, we allowed the turbine to spin freely to establish a baseline free rotation condition. Afterwards, we slowly increased the torque brake voltage until stall, recording RPM, torque, and electrical power output to evaluate the blade's performance. The blade operated safely under all test conditions and satisfied all structural and operational constraints. While peak power and operating rpm were lower than the model predictions (indicating early stall and reduced aerodynamic efficiency), the testing produced data that clearly revealed performance trends and model limitations.
 
-/assets/images/Power Curves.png
+image: /assets/images/Power Curves.png
 
 My Contribution
 
